@@ -4,8 +4,11 @@ const LightSwitchButton = () => {
  
   const [light, setLight] = useState("off");
 
+  const handleClick = () => {
+    setLight(light === "on" ? "off" : "on")
+  }
   return (
-    <button className="LightSwitchButton">
+    <button onClick={handleClick} className="LightSwitchButton">
       {/* When the state is on */}
       {light==="on" && <span className="on"><i>💡</i> I'm on!</span>}
       {/* When the state is off */}
