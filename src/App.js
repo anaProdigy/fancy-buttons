@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import './App.css';
 import AngryButton from "./components/AngryButton";
 import CounterButton from "./components/CounterButton";
@@ -9,7 +10,7 @@ const App = () => {
   const [light, setLight] = useState("off");
 
   return (
-    <div className={`App`}>
+    <div className={`App dark` } >
       <h1>Fancy Buttons!</h1>
       <section>
         <AngryButton />
